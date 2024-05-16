@@ -1,0 +1,14 @@
+# Target labels
+ sfml-populate
+# Source files and their labels
+C:/dev/04.homework-345726-76bb84/build/_deps/sfml-subbuild/CMakeFiles/sfml-populate
+C:/dev/04.homework-345726-76bb84/build/_deps/sfml-subbuild/CMakeFiles/852155823ccc15511c98fd66ae8e3e4c/sfml-populate.rule
+C:/dev/04.homework-345726-76bb84/build/_deps/sfml-subbuild/CMakeFiles/98ab4bebc2a4e15f15487a0521acfcbd/sfml-populate-complete.rule
+C:/dev/04.homework-345726-76bb84/build/_deps/sfml-subbuild/CMakeFiles/10e6739b721f90b7f907e05802f108d6/sfml-populate-build.rule
+C:/dev/04.homework-345726-76bb84/build/_deps/sfml-subbuild/CMakeFiles/10e6739b721f90b7f907e05802f108d6/sfml-populate-configure.rule
+C:/dev/04.homework-345726-76bb84/build/_deps/sfml-subbuild/CMakeFiles/10e6739b721f90b7f907e05802f108d6/sfml-populate-download.rule
+C:/dev/04.homework-345726-76bb84/build/_deps/sfml-subbuild/CMakeFiles/10e6739b721f90b7f907e05802f108d6/sfml-populate-install.rule
+C:/dev/04.homework-345726-76bb84/build/_deps/sfml-subbuild/CMakeFiles/10e6739b721f90b7f907e05802f108d6/sfml-populate-mkdir.rule
+C:/dev/04.homework-345726-76bb84/build/_deps/sfml-subbuild/CMakeFiles/10e6739b721f90b7f907e05802f108d6/sfml-populate-patch.rule
+C:/dev/04.homework-345726-76bb84/build/_deps/sfml-subbuild/CMakeFiles/10e6739b721f90b7f907e05802f108d6/sfml-populate-test.rule
+C:/dev/04.homework-345726-76bb84/build/_deps/sfml-subbuild/CMakeFiles/10e6739b721f90b7f907e05802f108d6/sfml-populate-update.rule

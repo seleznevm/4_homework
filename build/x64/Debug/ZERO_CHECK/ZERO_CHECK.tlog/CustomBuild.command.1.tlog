@@ -1,0 +1,10 @@
+^C:\DEV\04.HOMEWORK-345726-76BB84\BUILD\CMAKEFILES\E06960B3C42795CEAD8ECBB56024FE70\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/dev/04.homework-345726-76bb84 -BC:/dev/04.homework-345726-76bb84/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/dev/04.homework-345726-76bb84/build/physics.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
