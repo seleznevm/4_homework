@@ -6,16 +6,14 @@
  * @param velocity новое значение скорости
  */
 void Ball::setVelocity(const Velocity& velocity) {
-    // TODO: место для доработки
-    this->setVelocity(velocity);
+    this->_velocity = velocity;
 }
 
 /**
  * @return скорость объекта
  */
 Velocity Ball::getVelocity() const {
-    // TODO: место для доработки
-    return {this->getVelocity()};
+    return {this->_velocity};
 }
 
 /**
@@ -28,7 +26,7 @@ Velocity Ball::getVelocity() const {
  */
 void Ball::draw(Painter& painter) const {
     // TODO: место для доработки
-    painter.draw(this->getCenter(), this->getRadius(), {0,255,0});
+    painter.draw(this->_center,this->_radius,Color());
 }
 
 /**
@@ -37,15 +35,23 @@ void Ball::draw(Painter& painter) const {
  */
 void Ball::setCenter(const Point& center) {
     // TODO: место для доработки
-    this->setCenter(center);
+    this->_center = center;
 }
 
 /**
  * @return центр объекта
  */
 Point Ball::getCenter() const {
-    // TODO: место для доработки
-    return {this->getCenter()};
+    return {this->_center};
+}
+
+/*
+    Устанавливает радиус шара
+*/
+
+void Ball::setRadius(const double r)
+{
+    this->_radius = r;
 }
 
 /**
@@ -54,8 +60,7 @@ Point Ball::getCenter() const {
  * не требуется
  */
 double Ball::getRadius() const {
-    // TODO: место для доработки
-    return {this->getRadius()};
+    return {this->_radius};
 }
 
 /**
@@ -66,6 +71,9 @@ double Ball::getRadius() const {
  * эквивалентна объему: PI * radius^3 * 4. / 3.
  */
 double Ball::getMass() const {
-    // TODO: место для доработки
-    return {this->getMass()};
+    return {this->_mass};
+}
+
+void Ball::setColor(double r, double g, double b) {
+    this->_color = Color(r, g, b);
 }

@@ -10,6 +10,14 @@ public:
     void draw(Painter& painter) const;
     void setCenter(const Point& center);
     Point getCenter() const;
+    void setRadius(const double r);
     double getRadius() const;
     double getMass() const;
+    void setColor(double r, double g, double b);
+private:
+    Velocity _velocity;
+    Point _center;
+    double _radius;
+    double _mass;
+    Color _color;
 };
