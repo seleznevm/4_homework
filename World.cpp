@@ -49,9 +49,12 @@ World::World(const std::string& worldFilePath) {
     while (stream.peek(), stream.good()) {
         // Читаем координаты центра шара (x, y) и вектор
         // его скорости (vx, vy)
-        stream >> x >> y >> vx >> vy;
+        Point point;
+        Point vector;
+        Color color;
+        stream >> point >> vector;
         // Читаем три составляющие цвета шара
-        stream >> red >> green >> blue;
+        stream >> color;
         // Читаем радиус шара
         stream >> radius;
         // Читаем свойство шара isCollidable, которое
@@ -60,20 +63,12 @@ World::World(const std::string& worldFilePath) {
         // В базовой части задания этот параметр
         stream >> std::boolalpha >> isCollidable;
 
-        // TODO: место для доработки.
-        // Здесь не хватает самого главного - создания
-        // объекта класса Ball со свойствами, прочитанными
-        // выше, и его помещения в контейнер balls
-
-        // После того как мы каким-то образом
-        // сконструируем объект Ball ball;
-        // добавьте его в конец контейнера вызовом
-        // balls.push_back(ball);
+        // создание шара и помещение его в вектор balls
         Ball ball;
-        ball.setCenter(Point(x,y));
-        Velocity velocity = Velocity(Point(vx,vy));
+        ball.setCenter(point);
+        Velocity velocity = Velocity(vector);
         ball.setVelocity(velocity);
-        ball.setColor(red, green, blue);
+        ball.setColor(color);
         ball.setRadius(radius);
         balls.push_back(ball);
     }

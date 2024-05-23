@@ -1,0 +1,18 @@
+{
+  "version": "0.2.1",
+  "defaults": {},
+  "configurations": [
+    {
+      "type": "default",
+      "project": "C:\\dev\\04.homework-345726-76bb84\\out\\build\\x64-Debug",
+      "projectTarget": "physics.exe",
+      "name": "Launch with arguments",
+      "args": [ "C:\\dev\\04.homework-345726-76bb84\\data\\smile.txt" ],
+      "cwd": "${workspaceRoot}",
+      "env": {},
+      "preLaunchTask": "",
+      "stopAtEntry": false,
+      "console": "externalTerminal"
+    }
+  ]
+}

@@ -74,6 +74,6 @@ double Ball::getMass() const {
     return {this->_mass};
 }
 
-void Ball::setColor(double r, double g, double b) {
-    this->_color = Color(r, g, b);
+void Ball::setColor(Color& color) {
+    this->_color = color;
 }

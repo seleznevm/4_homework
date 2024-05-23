@@ -13,7 +13,7 @@ public:
     void setRadius(const double r);
     double getRadius() const;
     double getMass() const;
-    void setColor(double r, double g, double b);
+    void setColor(Color& color);
 private:
     Velocity _velocity;
     Point _center;
