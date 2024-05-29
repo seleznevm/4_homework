@@ -71,7 +71,7 @@ double Ball::getRadius() const {
  * эквивалентна объему: PI * radius^3 * 4. / 3.
  */
 double Ball::getMass() const {
-    return {this->_mass};
+    return {3.14 * std::pow(this->_radius, 3) * 4 / 3};
 }
 
 void Ball::setColor(Color& color) {
